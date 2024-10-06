@@ -1,5 +1,4 @@
-# Minecraft Developer Tools 
-## v${project.version}
+# Minecraft Developer Tools  `v${project.version}`
 
 **Note:** This is a fork of the amazing [SimpAPI](https://github.com/Cortex-MC/SimpAPI?tab=readme-ov-file), with some essential feature enhancements and code optimizations. 
 
@@ -15,6 +14,8 @@
   - [Menu Manager](#menu-manager)
   - [Command Manager](#command-manager)
   - [Auto Register Bukkit Events](#auto-register-bukkit-events)
+  - Logging wrappers
+  - Run methods asynchronously using `@RunAsync`
 
 ## Introduction
 ****

@@ -1,8 +1,13 @@
 package io.myzticbean.mcdevtools;
 
+import io.myzticbean.mcdevtools.annotations.async.aspect.RunAsyncAspect;
+import lombok.Getter;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class MCDevTools extends JavaPlugin {
+
+    @Getter
+    private static JavaPlugin plugin = new MCDevTools();
 
     @Override
     public void onEnable() {
@@ -12,5 +17,10 @@ public final class MCDevTools extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+    }
+
+    public static void setup(JavaPlugin plugin) {
+        MCDevTools.plugin = plugin;
+        new RunAsyncAspect(plugin);
     }
 }
