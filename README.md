@@ -1,5 +1,4 @@
-# Minecraft Developer Tools 
-## v1.0.3-alpha
+# Minecraft Developer Tools  `v1.0.4-alpha`
 
 **Note:** This is a fork of the amazing [SimpAPI](https://github.com/Cortex-MC/SimpAPI?tab=readme-ov-file), with some essential feature enhancements and code optimizations. 
 
@@ -15,6 +14,8 @@
   - [Menu Manager](#menu-manager)
   - [Command Manager](#command-manager)
   - [Auto Register Bukkit Events](#auto-register-bukkit-events)
+  - Logging wrappers
+  - Run methods asynchronously using `@RunAsync`
 
 ## Introduction
 ****
@@ -41,7 +42,7 @@ Video Showcase: https://youtu.be/kKaIf7EkCWg
 <dependency>
     <groupId>com.github.myzticbean</groupId>
     <artifactId>MCDevTools</artifactId>
-    <version>1.0.3-alpha</version>
+    <version>1.0.4-alpha</version>
 </dependency>
 ```
 
@@ -67,7 +68,7 @@ repositories {
 Groovy/Kotlin:
 ```groovy
 dependencies {
-    implementation 'com.github.myzticbean:MCDevTools:1.0.3-alpha'
+    implementation 'com.github.myzticbean:MCDevTools:1.0.4-alpha'
 }
 ```
 ([Back to top](#table-of-contents))
