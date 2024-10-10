@@ -12,7 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 @NoArgsConstructor  // Default constructor required for AspectJ
 public class RunAsyncAspect {
 
-    private JavaPlugin plugin;
+    private static JavaPlugin plugin;
 
     public RunAsyncAspect(JavaPlugin pluginInstance) {
         plugin = pluginInstance;

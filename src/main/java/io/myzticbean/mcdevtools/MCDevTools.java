@@ -19,8 +19,8 @@ public final class MCDevTools extends JavaPlugin {
         // Plugin shutdown logic
     }
 
-    public static void setup(JavaPlugin plugin) {
-        MCDevTools.plugin = plugin;
+    public static void setup(JavaPlugin pluginInstance) {
+        plugin = pluginInstance;
         new RunAsyncAspect(plugin);
     }
 }
