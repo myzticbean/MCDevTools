@@ -1,4 +1,4 @@
-# Minecraft Developer Tools  `v1.0.5-alpha`
+# Minecraft Developer Tools  `v1.0.6-alpha`
 
 **Note:** This is a fork of the amazing [SimpAPI](https://github.com/Cortex-MC/SimpAPI?tab=readme-ov-file), with some essential feature enhancements and code optimizations. 
 
@@ -42,7 +42,7 @@ Video Showcase: https://youtu.be/kKaIf7EkCWg
 <dependency>
     <groupId>com.github.myzticbean</groupId>
     <artifactId>MCDevTools</artifactId>
-    <version>1.0.5-alpha</version>
+    <version>1.0.6-alpha</version>
 </dependency>
 ```
 
@@ -68,7 +68,7 @@ repositories {
 Groovy/Kotlin:
 ```groovy
 dependencies {
-    implementation 'com.github.myzticbean:MCDevTools:1.0.5-alpha'
+    implementation 'com.github.myzticbean:MCDevTools:1.0.6-alpha'
 }
 ```
 ([Back to top](#table-of-contents))
