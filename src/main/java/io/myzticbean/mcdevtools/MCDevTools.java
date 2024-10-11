@@ -2,25 +2,17 @@ package io.myzticbean.mcdevtools;
 
 import io.myzticbean.mcdevtools.annotations.async.aspect.RunAsyncAspect;
 import lombok.Getter;
+import lombok.experimental.UtilityClass;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class MCDevTools extends JavaPlugin {
+@UtilityClass
+public class MCDevTools {
 
     @Getter
-    private static JavaPlugin plugin = new MCDevTools();
+    private static JavaPlugin plugin;
 
-    @Override
-    public void onEnable() {
-        // Plugin startup logic
-    }
-
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
-
-    public static void setup(JavaPlugin pluginInstance) {
+    public static void initialize(JavaPlugin pluginInstance) {
         plugin = pluginInstance;
-        new RunAsyncAspect(plugin);
+        new RunAsyncAspect(pluginInstance);
     }
 }
